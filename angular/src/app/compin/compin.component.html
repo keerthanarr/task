@@ -1,2 +1,4 @@
-<p>compin works!</p>
-<h2>ViewChild</h2>
+<app-child [parentData]="name"></app-child>
+
+<app-child (childevent)="message=$event"></app-child>
+{{message}}

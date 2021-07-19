@@ -11,6 +11,9 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { BindingComponent } from './binding/binding.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { RegisterComponent } from './register/register.component';
     HomeComponent,
     LoginComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    PipeComponent,
+    BindingComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,

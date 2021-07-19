@@ -1,0 +1,20 @@
+<p>directive works!</p>
+<h1>ngSwitch</h1>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You picked red color</div>
+    <div *ngSwitchCase="'blue'">You picked red color</div>
+    <div *ngSwitchCase="'green'">You picked red color</div>
+    <div *ngSwitchDefault>pick again</div>
+</div>
+<h1>ngFor</h1>
+<div *ngFor="let name of names">
+    <h4>{{name}}</h4>
+</div>
+<h1>ngIf</h1>
+<div *ngIf="displayname; then thenblock; else elseblock"></div>
+<ng-template #thenblock>
+    <h4>Angular</h4>
+</ng-template>
+<ng-template #elseblock>
+    <h4>React</h4>
+</ng-template>

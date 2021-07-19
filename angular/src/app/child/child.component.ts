@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-child',
@@ -6,10 +7,14 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-
+@Input() parentData: any;
+@Output() childevent=new EventEmitter()
   constructor() { }
 visible=true;
   ngOnInit(): void {
   }
-
+Event()
+{
+  this.childevent.emit('hey angular');
+}
 }

@@ -8,7 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class CompinComponent implements OnInit {
 
   constructor() { }
-
+name="keerthi";
+message="";
   ngOnInit(): void {
   }
 
