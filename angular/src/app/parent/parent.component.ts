@@ -10,6 +10,8 @@ export class ParentComponent implements OnInit {
 
   constructor() { }
 @ViewChild(ChildComponent) child:any;
+name="keerthi";
+message="";
   ngOnInit(): void {
   }
 viewchild()

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
 name="TVM";
+color="";
   constructor() { }
 
   ngOnInit(): void {
