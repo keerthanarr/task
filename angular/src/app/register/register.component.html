@@ -1,0 +1,14 @@
+<form [formGroup]="register"><label>UserName</label>
+<input type="text" placeholder="Enter your name" formControlName="name"><br>
+<label>Email Id</label>
+<input type="text" placeholder="Enter your email" formControlName="email"><br>
+<label>password</label>
+<input type="text" placeholder="Enter your password" formControlName="password"><br>
+<label>Contact NO</label>
+<input type="text" placeholder="Enter your contact no" formControlName="controlid"><br>
+<label>Gender</label>
+<input type="text" placeholder="Enter your Gender " formControlName="gender"><br>
+<button (click)="submit()">Submit</button>
+<!--<button (click)="submit">View</button>
+<button (click)="submit">Update</button>-->
+</form>

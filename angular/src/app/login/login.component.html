@@ -1,4 +1,7 @@
-Email<input type="text" value="name"><br>
-password<input type="text" value="name"><br>
-<button (click)="onclick()">sumbit</button>
-
+<form [formGroup]="login">
+    Email<input type="text"  formControlName="email"><br>
+password<input type="password"  formControlName="password"><br>
+<button type="submit" (click)="onclick()" [routerLink]="['/dashboard']">sumbit</button>
+<br>
+<button type="register" (click)="onclick()" [routerLink]="['/register']">Register</button>
+</form>
