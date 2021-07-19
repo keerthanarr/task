@@ -14,6 +14,9 @@ import { RegisterComponent } from './register/register.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { BindingComponent } from './binding/binding.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { EmployeenameComponent } from './employeename/employeename.component';
+import { EmpserviceService } from './empservice.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { DirectiveComponent } from './directive/directive.component';
     RegisterComponent,
     PipeComponent,
     BindingComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    EmployeelistComponent,
+    EmployeenameComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,7 @@ import { DirectiveComponent } from './directive/directive.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmpserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
